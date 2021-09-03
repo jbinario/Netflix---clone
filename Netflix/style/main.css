@@ -1,0 +1,122 @@
+:root{
+    --vermelho: #E50914;
+    --preta:    #141414;
+    --cinza:    #aaa;
+    --branco:   #fff;
+}
+
+*{
+    margin:   0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body{
+background: var(--preta);
+font-family: 'Arial', Times, serif;
+color: var(--branco);
+}
+
+header .container{
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content:space-between;
+ }
+
+ header .logomarca{
+     
+     color: var(--vermelho);
+     font-family: 'Arial Black', Times;
+     font-size: 35px;
+
+     
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 25px;
+    
+
+    }
+
+header nav a:hover{
+    color: var(--branco);
+}
+
+/* Filme em destaque*/
+
+.filme-destaque{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0, 0, 0, 0.50)100%), url('/img/img12.jpg');
+    height: 600px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-destaque .descricao{
+    
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.titulo{
+    
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--branco);
+
+    padding: 15px 30px;
+    
+    margin-right: 10px;
+    margin-top: 20px;
+    
+    
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preta);
+}
+
+.botao i{
+    margin-right: 7px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-destaque .container{
+    width: 50%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
